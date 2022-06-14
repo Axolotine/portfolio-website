@@ -2,38 +2,80 @@
 
 <html>
     <head>
-        <link rel="stylesheet" href="./resources/styles.css">
+        <link href="./resources/css/universal.css" rel="stylesheet">  
+        <link rel="stylesheet" href="./resources/css/index.css">
         <title>Axolotine's Webzone</title>
     </head>
-
-    <header>
-        <h1>Welcome to my web zone...</h1>
-        <nav>
-            <ul role="presentation">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <body>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                I'm an artist and a programmer, hailing from Michigan in the USA.
-                I started doing online coding courses through Codecademy in February of 2022, 
-                but I've been coding in one way or another since I was a kid with a TI-84 Calculator.
-                What I lack in professional experience I make up for in volition.
-                <br>
-                In my free time I enjoy playing video games, reading books, and occasionally fishing.
+        <header>
+            <h1>Welcome to my web zone...</h1>
+            <nav>
+                <ul role="presentation">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <div id="about-container">
+                    <div id="about-text">
+                        <p>
+                            <img 
+                                class="axolotl"
+                                src="./resources/img/axolotl.jpg" 
+                                alt="A picture of an axolotl." 
+                            />
+                            I'm an artist and a programmer, hailing from Michigan in the USA. I was born on February 16th 1994.
+                            I started doing online coding courses through Codecademy in February of 2022, 
+                            but I've been coding in one way or another since I was a kid with a TI-84 Calculator.
+                            What I lack in professional experience I make up for in determination.
+                            In my free time I enjoy playing video games, reading books, and occasionally fishing. 
+                            I enjoy strategy games, puzzle games, and RPGs mostly.
+                            As for books, I really don't read as often as I'd like to. 
+                            When I'm reading for enjoyment it's generally some sort of fantasy novel, and my favorite series is Discworld.
+                            The picture is unrelated.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Projects</h2>
+                <ul role="presentation">
+                    <li><a href="https://axolotine.itch.io/feed-cat">Feed Cat</a>, a free browser game made using <a href="https://www.bitsy.org">Bitsy</a>!</li>
+                    <li><a href="https://frankiesmileshow.itch.io/bugburgh">Bugburgh</a>, a free game made for a <a href="https://frankiesmileshow.itch.io/bugburgh">Ludum Dare</a>!</li>
+                    <li>More to come!</li>
+                </ul>
                 
-            </p>
-        </section>
+            </section>
+            <section id="skills">
+                <h2>Skills</h2>
+                
+                <ul role="presentation" id="skill-types">
+                    <li>C#</li>
+                    <li>JS</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>GML</li>
+                    <li>Python</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                </ul>
+                
+            </section>
+            <section id="worldgen">
+                <h2>Generation Test</h2>
+                <div id="generate-button">Generate!</div>
+                <div id="map-area"></div>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
     </body>
-    <footer>
-
-    </footer>
-
+    
+    <script src="./resources/js/worldgen.js"></script>
     <script src="./resources/js/index.js"></script>
 </html>
